@@ -1,0 +1,8 @@
+{
+  "name": "SENTRIXA ",
+  "description": "An autonomous defensive AI agent for cybersecurity research, focusing on scam detection, behavioral analysis, and structured incident reporting in synthetic environments.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENTRIXA | Detect. Analyze. Defend.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              sentrixa: {
+                dark: {
+                  bg: '#020617',
+                  card: '#0F172A',
+                  primary: '#38BDF8',
+                  secondary: '#A855F7',
+                  accent: '#22C55E',
+                  danger: '#EF4444',
+                  warning: '#F59E0B'
+                },
+                light: {
+                  bg: '#FFFFFF',
+                  card: '#F8FAFC',
+                  primary: '#0284C7',
+                  secondary: '#7C3AED',
+                  accent: '#16A34A',
+                  danger: '#DC2626',
+                  warning: '#D97706'
+                }
+              }
+            },
+            fontFamily: {
+              heading: ['Space Grotesk', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace']
+            },
+            backgroundImage: {
+              'sentrixa-gradient': 'linear-gradient(135deg, #38BDF8 0%, #818CF8 50%, #A855F7 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, .font-heading {
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: -0.02em;
+      }
+      .logo-text {
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+      .gradient-border {
+        position: relative;
+        border-radius: 1rem;
+        background: linear-gradient(135deg, #38BDF8, #A855F7);
+        padding: 1px;
+      }
+      .gradient-border > div {
+        background: inherit;
+        border-radius: inherit;
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom": "https://esm.sh/react-dom@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-sentrixa-light-bg dark:bg-sentrixa-dark-bg text-slate-900 dark:text-slate-200 transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
